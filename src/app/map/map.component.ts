@@ -19,14 +19,15 @@ export class MapComponent implements AfterViewInit {
   public ngAfterViewInit(): void {
     const origin_coord = new L.LatLng(47.5596, 7.5886)
     const destination_coord = new L.LatLng(46.2044, 6.1432)
-    var centroid = this.calculate_center(origin_coord, destination_coord)
+    const centroid = this.calculate_center(origin_coord, destination_coord)
     this.loadMap(centroid);
     this.addMarkers(origin_coord, destination_coord);
   }
 
   private calculate_center(origin_coord: L.LatLng, destination_coord: L.LatLng): L.LatLng {
-
-    const centroid = new L.LatLng(46.882, 6.8659)
+    const middle_poing_lat = (origin_coord.lat+destination_coord.lat)/2
+    const middle_point_lng = (origin_coord.lng+destination_coord.lng)/2
+    const centroid = new L.LatLng(middle_poing_lat, middle_point_lng)
     return centroid
   }
 

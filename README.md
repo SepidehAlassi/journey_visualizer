@@ -1,4 +1,4 @@
-# MapExample
+# JourneyVisualizer
 
 This is an Angular app to visualize journeys on OpenStreetMaps using `leaflet` library.
 
@@ -7,6 +7,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Install Packages
 
 To install the packages run `npm i`
+
+## Start the application
+
+To start the application run `npm start`. Navigate to `http://localhost:6000/`.
 
 ## Development server
 
