@@ -1,6 +1,6 @@
 import { AfterViewInit, Component } from '@angular/core';
-import { Observable, Subscriber } from 'rxjs';
 import * as L from 'leaflet';
+import 'leaflet-arrowheads';
 
 import { environment } from '../../environments/environment';
 
@@ -17,11 +17,20 @@ export class MapComponent implements AfterViewInit {
   }
 
   public ngAfterViewInit(): void {
-    const origin_coord = new L.LatLng(47.5596, 7.5886)
-    const destination_coord = new L.LatLng(46.2044, 6.1432)
+    const origin_coord = new L.LatLng(47.5596, 7.5886) //basel
+    const destination_coord = new L.LatLng(46.2044, 6.1432) // geneva
+    const stage1 = new L.LatLng(47.4866, 7.7334) // Liestal
+    const stage2 = new L.LatLng(47.3815, 7.7469) // Waldenburg
+    const stage3 = new L.LatLng( 47.2088,7.5323) // solothurn
+    const stage4 = new L.LatLng(47.1368, 7.2468) // Biel/Bienne
+    const stage5 = new L.LatLng(46.8806, 7.0427) // Avenches
+    const stage6 = new L.LatLng(46.5197, 6.6323) // Lausanne
+    const stage7 = new L.LatLng(46.3166, 6.1936) // Coppet
+    const stages = [origin_coord, stage1, stage2, stage3, stage4, stage5, stage6, stage7, destination_coord]
     const centroid = this.calculate_center(origin_coord, destination_coord)
     this.loadMap(centroid);
     this.addMarkers(origin_coord, destination_coord);
+    this.addLine(stages)
   }
 
   private calculate_center(origin_coord: L.LatLng, destination_coord: L.LatLng): L.LatLng {
@@ -61,6 +70,13 @@ export class MapComponent implements AfterViewInit {
       }), title: 'Workspace'
     } as L.MarkerOptions);
     destination.addTo(this.map)
+  }
+
+  private addLine(stages: L.LatLng[]): void {
+    const line = L.polyline(stages, {
+      color: '#0d9148'
+    } as L.PolylineOptions).arrowheads({ size: '15%' });
+    line.addTo(this.map)
   }
 
 }
