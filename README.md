@@ -1,6 +1,12 @@
 # MapExample
 
+This is an Angular app to visualize journeys on OpenStreetMaps using `leaflet` library.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.10.
+
+## Install Packages
+
+To install the packages run `npm i`
 
 ## Development server
 
