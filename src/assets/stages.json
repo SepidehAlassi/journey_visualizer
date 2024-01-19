@@ -1,0 +1,151 @@
+{
+  "head": {
+    "vars": [
+      "startWikiIri",
+      "startLat",
+      "startLong",
+      "endWikiIri",
+      "endLat",
+      "endLong",
+      "startDate",
+      "endDate",
+      "Transportation"
+    ]
+  },
+  "results": {
+    "bindings": [
+      {
+        "startWikiIri": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q456"
+        },
+        "startLat": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#double",
+          "type": "literal",
+          "value": "45.758888888889"
+        },
+        "startLong": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#double",
+          "type": "literal",
+          "value": "4.8413888888889"
+        },
+        "endWikiIri": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q1116468"
+        },
+        "endLat": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#double",
+          "type": "literal",
+          "value": "45.805277777778"
+        },
+        "endLong": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#double",
+          "type": "literal",
+          "value": "4.1547222222222"
+        },
+        "startDate": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "type": "literal",
+          "value": "1678-05-15"
+        },
+        "endDate": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "type": "literal",
+          "value": "1678-05-16"
+        },
+        "Transportation": {
+          "type": "literal",
+          "value": "Horse"
+        }
+      },
+      {
+        "startWikiIri": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q1116468"
+        },
+        "startLat": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#double",
+          "type": "literal",
+          "value": "45.805277777778"
+        },
+        "startLong": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#double",
+          "type": "literal",
+          "value": "4.1547222222222"
+        },
+        "endWikiIri": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q217174"
+        },
+        "endLat": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#double",
+          "type": "literal",
+          "value": "45.856388888889"
+        },
+        "endLong": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#double",
+          "type": "literal",
+          "value": "3.5475"
+        },
+        "startDate": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "type": "literal",
+          "value": "1678-05-16"
+        },
+        "endDate": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "type": "literal",
+          "value": "1678-05-17"
+        },
+        "Transportation": {
+          "type": "literal",
+          "value": "Horse"
+        }
+      },
+      {
+        "startWikiIri": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q217174"
+        },
+        "startLat": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#double",
+          "type": "literal",
+          "value": "45.856388888889"
+        },
+        "startLong": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#double",
+          "type": "literal",
+          "value": "3.5475"
+        },
+        "endWikiIri": {
+          "type": "uri",
+          "value": "http://www.wikidata.org/entity/Q42168"
+        },
+        "endLat": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#double",
+          "type": "literal",
+          "value": "45.779722222222"
+        },
+        "endLong": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#double",
+          "type": "literal",
+          "value": "3.0869444444444"
+        },
+        "startDate": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "type": "literal",
+          "value": "1678-05-17"
+        },
+        "endDate": {
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "type": "literal",
+          "value": "1678-05-19"
+        },
+        "Transportation": {
+          "type": "literal",
+          "value": "Horse"
+        }
+      }
+    ]
+  }
+}

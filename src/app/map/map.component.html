@@ -2,4 +2,7 @@
     <div class="map-frame">
       <div id="map"></div>
     </div>
+  <div *ngIf="jsonData">
+    <pre>{{ jsonData | json }}</pre>
+  </div>
   </div>
